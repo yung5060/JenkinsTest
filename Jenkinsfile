@@ -4,7 +4,7 @@ pipeline {
     }
 
     stages {
-        stage('B711181 조융') {
+        stage('Hello') {
             steps {
                 echo "202206071400"
             }
