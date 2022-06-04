@@ -1,26 +1,13 @@
 pipeline {
-    agent any
+    agent {
+        label "demoAgent"
+    }
 
     stages {
-        stage('Build') {
+        stage('B711181 조융') {
             steps {
-                echo 'Building..'
+                echo "202206071400"
             }
-        }
-        stage('Test') {
-            steps {
-                build 'MavenProject'  
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-    post {
-        always {
-            echo "pipline job done!!!"
         }
     }
 }
